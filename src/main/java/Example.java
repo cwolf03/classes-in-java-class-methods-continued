@@ -8,12 +8,16 @@ public class Example {
      * - named "not"
      * - accepts a single boolean argument
      * - returns a boolean value
-     *
+     * <p>
      * This method returns the opposite of the value of the argument. EG: if the
      * method receives true for its argument, it will return false.
      */
     // todo: write not() method
 
+
+    public boolean not(boolean sayYes){
+        return !sayYes;
+    }
     /**
      * Create a method as described:
      * - named "doublePlusOne"
@@ -25,7 +29,10 @@ public class Example {
      * returns 11.
      */
     // todo: write doublePlusOne() method
-
+    int x = 5;
+    public int doublePlusOne(int x){
+        return x * 2 + 1;
+    }
     /**
      * Create a method as described:
      * - named "averageTwoNumbers"
@@ -36,7 +43,11 @@ public class Example {
      * averaged to 9.
      */
     // todo: write averageTwoNumbers() method
-
+    double z = 3.2;
+    double y = 4.7;
+    public double averageTwoNumbers(double z, double y){
+        return (z + y)/2;
+    }
     /**
      * Create a method as described:
      * - named "getGreeting"
@@ -49,7 +60,9 @@ public class Example {
      * "Hello, Tracy!".
      */
     // todo: write getGreeting() method
-
+    public String getGreeting (String getGreeting){
+        return "Hello, " + getGreeting + "!";
+    }
     /**
      * Create a method as described:
      * - named "sayHello"
@@ -62,4 +75,8 @@ public class Example {
      * "Tracy", this method should print out "Hello, Tracy!".
      */
     // todo: write sayHello() method
+    public void sayHello(String getGreeting){
+
+        System.out.println("Hello, " + getGreeting + "!");
+    }
 }
